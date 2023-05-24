@@ -1,0 +1,43 @@
+//buttons
+.numbers {
+  grid-area: button;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  display: block;
+  button {
+    width: 19.7%;
+    height: 19.5%;
+    cursor: pointer;
+    border: none;
+  }
+  .number {
+    background-color: var(--color-number);
+    border-radius: var(--radius);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    &:hover {
+      background-color: var(--color-hover);
+    }
+  }
+}
+.sign {
+  font-size: 1.2rem;
+  background-color: var(--color-sign);
+  border-radius: var(--radius);
+  img,
+  i {
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  &:hover {
+    background-color: var(--color-hover);
+  }
+}
+sup,
+sub {
+  background-color: transparent;
+}

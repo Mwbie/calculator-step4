@@ -1,0 +1,104 @@
+div.result {
+  grid-area: result;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .output {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: flex-end;
+    .zero {
+      align-self: flex-end;
+      padding-right: 20px;
+      justify-content: flex-end;
+      font-size: calc(2rem + 3.5vh);
+      font-weight: 500;
+      color: var(--color-font);
+    }
+    #first-number {
+        padding-right: 20px;
+      }
+  }
+  .modes {
+    display: flex;
+    max-width: 380px;
+    justify-content: space-between;
+    align-items: center;
+    i {
+        font-size: 0.5rem;
+      }
+    button {
+        font-size: 0.75rem;
+        background: transparent;
+        text-align: center;
+        padding: 10px 0;
+        cursor: pointer;
+        width: 25%;
+        border: none;
+        outline: none;
+        .m {
+            position: relative;
+          }
+      }
+      button.active {
+        font-size: 0.9rem;
+        font-weight: 500;
+        &:hover {
+            background: var(--color-hover);
+            border-radius: var(--radius);
+          }
+      }
+      button.de-active {
+        color: #999;
+        cursor: default;
+      }
+  }
+}
+.burger {
+  display: inline-flex;
+  justify-content: space-between;
+  p {
+    margin-left: 15px;
+    font-size: 1.2rem;
+    margin-top: 3px;
+  }
+  .right-side {
+    align-self: center;
+    img {
+        display: none;
+        margin-right: 16px;
+        cursor: pointer;
+      }
+  }
+  .left-side {
+    display: flex;
+    align-items: baseline;
+    p {
+        align-self: center;
+      }
+    p + img {
+      width: 14px;
+      height: 14px;
+      margin-left: 20px;
+      background-color: var(--color-container);
+      &:hover {
+        background-color: var(--color-hover);
+        border-radius: var(--radius);
+      }
+    }
+    img {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      width: 50px;
+      height: 25px;
+      cursor: pointer;
+      margin-top: 5px;
+      &:hover {
+        background-color: var(--color-hover);
+        border-radius: var(--radius);
+      }
+    }
+  }
+}
